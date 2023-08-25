@@ -10,7 +10,7 @@ __Theory__
 2. Project Basics
 3. Language Basics
 4. Modules
-5. Data Types
+5. Collections
 6. Control Flow
 7. Functions
 8. Traits
