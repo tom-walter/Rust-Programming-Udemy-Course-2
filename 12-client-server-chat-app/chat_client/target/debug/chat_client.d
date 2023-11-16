@@ -1,0 +1,1 @@
+C:\Users\TWalter\Tutorials\Rust\ Learning\Rust-Programming-Udemy-Course-2\12-client-server-chat-app\chat_client\target\debug\chat_client.exe: C:\Users\TWalter\Tutorials\Rust\ Learning\Rust-Programming-Udemy-Course-2\12-client-server-chat-app\chat_client\src\main.rs
