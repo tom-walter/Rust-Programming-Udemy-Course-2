@@ -1,0 +1,49 @@
+@startuml
+!theme mars
+
+title Blockchain: 
+
+class Transaction {
+    +sender: String
+    +receiver: String
+    +amount: f32
+}
+
+class Blockheader {
+    +timestamp: i64
+    +nonce: u32
+    +pre_hash: String
+    +merkle: String
+    +difficulty: u32
+}
+
+class Block {
+    +header: Blockheader
+    +count: u32
+    +transactions: Vec<Transaction>
+}
+
+class Chain {
+    +chain: Vec<Block>,
+    +current_transaction: Vec<Transaction>
+    +difficulty: u32
+    +miner_addr: String
+    +reward: f32
+    
+    +new(miner_addr, difficulty): Chain
+    +generate_new_block(): bool
+    +new_transaction(sender, receiver, amount): bool
+    +last_hash(): String
+    +update_difficulty(difficulty): bool
+    +update_reward(reward): bool
+    +get_merkle(current_transaction): String
+    +proof_of_work(header):
+    +hash(item): String
+    +hex_to_string(hex): String
+}
+
+Block <|-down- Transaction
+Block <|-down- Blockheader
+Chain <|-down- Block
+
+@enduml
